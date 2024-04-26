@@ -38,7 +38,4 @@ def book_appointment():
     data=request.json
     appointments.append(data)
     return jsonify({"message":"Appointment booked successfully"})
-if __name__=='__main__':
-    #from waitress import serve
-    #serve(app,host="0.0.0.0",port=5000,threads=2)
-    app.run(debug = True)
+
